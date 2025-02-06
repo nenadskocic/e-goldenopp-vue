@@ -8,16 +8,16 @@ const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SER
 app.use(express.json());
 
 // Signup Endpoint
-// app.post('/api/signup', async (req, res) => {
-//   const { email, password } = req.body;
-//   try {
-//     const { data, error } = await supabase.auth.signUp({ email, password });
-//     if (error) throw error;
-//     res.json(data);
-//   } catch (error) {
-//     res.status(400).json({ error: error.message });
-//   }
-// });
+app.post('/api/signup', async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const { data, error } = await supabase.auth.signUp({ email, password });
+    if (error) throw error;
+    res.json(data);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
 
 // Login Endpoint
 app.post('/api/login', async (req, res) => {
