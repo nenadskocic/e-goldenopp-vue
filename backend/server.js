@@ -32,14 +32,14 @@ app.post('/api/login', async (req, res) => {
 });
 
 // Logout Endpoint
-// app.post('/api/logout', async (req, res) => {
-//   try {
-//     await supabase.auth.signOut();
-//     res.json({ message: 'Logged out successfully' });
-//   } catch (error) {
-//     res.status(400).json({ error: error.message });
-//   }
-// });
+app.post('/api/logout', async (req, res) => {
+  try {
+    await supabase.auth.signOut();
+    res.json({ message: 'Logged out successfully' });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
