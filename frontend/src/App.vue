@@ -21,6 +21,15 @@ export default {
 </script>
 
 <style>
+:root {
+  --primary-color: #2D2D2B;
+  --secondary-color: #B8926A;
+  --background-color: #EAE6DF;
+  --text-color: #2D2D2B;
+  --accent-color: #D4C8BE;
+  --border-color: #B0B0B0;
+  --white: white;
+}
 
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
