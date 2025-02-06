@@ -1,6 +1,0 @@
-{
-  "watch": ["src"],
-  "ext": "js,vue",
-  "ignore": ["node_modules", "dist"],
-  "exec": "npm run dev"
-}
