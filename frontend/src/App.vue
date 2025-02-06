@@ -17,6 +17,15 @@ import Footer from './components/Footer.vue';
 
 export default {
   components: { Navbar, Hero, About, NewsFeed, FAQ, Footer },
+  data() {
+    return { isDarkMode: false };
+  },
+  methods: {
+    toggleDarkMode() {
+      this.isDarkMode = !this.isDarkMode;
+      document.body.classList.toggle('dark', this.isDarkMode);
+    }
+  }
 };
 </script>
 
