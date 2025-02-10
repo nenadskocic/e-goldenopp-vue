@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "node server.js",
+    "dev:watch": "nodemon --exec \"npm run dev\"",
+    "build": "echo 'No build step needed for backend'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "npm-git-install": "^0.3.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
